@@ -7,10 +7,10 @@ interface Iprops {
 export default function Card(props: Iprops) {
   return (
     <>
-      <div className="cart bg-slate-100 px-4 pt-6 pb-7 max-w-[400px] border rounded shadow-lg">
+      <div className="cart bg-slate-100 px-4 pt-6 pb-7  border rounded shadow-lg">
         <div className="flex gap-x-4 items-center">
           <div className="img">
-            <Image src={props.img} width={60} alt="sorry" />
+            <img src={props.img} width={60} alt="sorry" />
           </div>
           <div>
             <h2 className="font-bold">{props.heading}</h2>
