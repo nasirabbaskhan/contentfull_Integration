@@ -14,7 +14,7 @@ const fetchServecesFromContentful = async () => {
 
 export default async function Home() {
   const service = await fetchServecesFromContentful();
-  console.log("fetchResponse", service.items[0].fields.title);
+  // console.log("fetchResponse", service.items[0].fields.title);
   return (
     <>
       <section className="mt-3">
