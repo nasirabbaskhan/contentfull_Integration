@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface Iprops {
   heading: string;
   description: string;
@@ -9,7 +10,7 @@ export default function Card(props: Iprops) {
       <div className="cart bg-slate-100 px-4 pt-6 pb-7 max-w-[400px] border rounded shadow-lg">
         <div className="flex gap-x-4 items-center">
           <div className="img">
-            <img src={props.img} width={60} alt="sorry" />
+            <Image src={props.img} width={60} alt="sorry" />
           </div>
           <div>
             <h2 className="font-bold">{props.heading}</h2>
