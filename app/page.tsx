@@ -30,7 +30,7 @@ export default async function Home() {
             autem dignissimos, alias blanditiis veritatis dolor!
           </p>
         </div>
-        <div className="main grid grid-cols-3 border mx-24 mt-6 gap-x-4 gap-y-6 ">
+        <div className="main grid grid-cols-3  mx-24 mt-6 gap-x-4 gap-y-6 ">
           {/* run loop to disply services here */}
           {service.items.map((item: any, index: any) => {
             return (
