@@ -12,23 +12,11 @@ export default async function Contentfull() {
 
   return (
     <>
-      {/* <div className="main bg-slate-200">
-        {data.items.map((item: any) => {
-          return (
-            <div id={item.sys.id}>
-              <p>{item.fields.title}</p>
-              {documentToReactComponents(item.fields.description)}
-              <img src={item.fields.image.fields.file.url} width={90} alt="" />
-              <hr />
-            </div>
-          );
-        })}
-      </div> */}
-
       <div>
-        {data.items.map((item: any) => {
+        {data.items.map((item: any, index: any) => {
           return (
             <div
+              key={index}
               id={item.sys.id}
               className="try mt-5 ml-56 max-w-[900px] bg-red-100 px-8 py-8 border rounded shadow-xl "
             >
